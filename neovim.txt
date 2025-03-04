@@ -1,0 +1,100 @@
+ctr+init.lua
+:e $MYVIMRC
+
+Check keymap
+:verbose map [ => check keymap of bracket plugin
+
+--------------------------------------------------- Hotkey
+
+Key input | Description
+
+nvim .    | open current folder
+
+:tabe     | open new tab
+:e file   | open a file
+:e .      | open current folder
+crtl + PGUP | change tab next 
+ctrl + PGDN | change tab back
+:tabn 2   | switch to tab by number
+:tabclose | close current tab
+
+--- open menu
+:Lazy     | lazy menu to check update
+space     | search menu
+space + / | fuzzy search
+g         | cusor menu
+[ or ]    | (plugin) bracket command
+ctlr + w  | window menu
+'         | marks menu
+
+--- select action (visual mode)
+v         | select char (visual menu)  
+V         | select line 
+ctrl + v  | block visual mode
+comment out - Ctrl+v -> 3j -> capital I -> <enter text> -> esc
+
+--- search action
+/         | search text
+n         | go to next search
+N         | go to previous search
+/ + \c    | ignore case
+
+--- move cusor
+w         | next start word (ctrl+2)\
+b         | previoud start word
+e         | next end word
+shift+8   | jump to next use
+shift+G   | last line of file
+g+g       | first line of file
+:<line>   | go to line
+
+--- edit action
+u         | undo
+:w        | save
+.         | repeat last edit
+d         | cut -----------------
+dd        | cut current line
+3dd       | cut 3 line
+diw       | cut current word
+d$        | cut to end line
+d^        | cut from start line
+y         | copy ----------------
+yy        | copy current line
+3yy       | copy 3 line
+yiw       | copy current word 
+y$        | copy to end line
+y^        | copy from start line 
+P         | past before cursor 
+p         | past after cursor 
+
+-------------------------------------------------------- Submenu
+
+
+--- cursor menu
+;         | last edit
+i         | last edit insert
+f         | go to file
+t         | change tab
+
+
+--- autocomplete
+ctrl+y    | select first item: 
+ctrl+n    | select the next item: 
+ctrl+p    | select the previous item
+
+-- bracket command
+[         | move cusor to start group
+]         | move cusor to end group
+
+
++help menu
+ sh
+
++document synbol
+ DS
++workspace symbol
+ WS
+
++bookmark
+ctrl+k
+space+space

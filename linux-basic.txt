@@ -1,0 +1,20 @@
+----------------------- Basic command
+cat - read file
+cat >> file - append last file
+cat "file1" >> "file2" - append file1 to file2
+cp - copy
+rm - delete
+mv - rename
+
+---------------------- Folder structure
+Everything is a file
+
+## folder /bin => Binaries needed for normal/standard system functioning at any run level 
+## folder /sbin => Binaries needed for booting, low-level system repair, or maintanance
+adduser - adduser
+
+## folder /user/bin => Application/distribution binaries meant to be accessed by locally logged in ueers
+## folder /usr/sbin => Application/distribution binaries that support or config stuff in /sbin.
+
+## folder /usr/share/sbin => Application/distribution binaries or scripts meant to be accessed via web
+## folder /usr/local/bin => Local compiled or manuallu installed.
